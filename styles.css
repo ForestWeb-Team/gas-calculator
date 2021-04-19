@@ -290,6 +290,12 @@ select {
   height: 55px;
   background: #eef1f5;
   border-radius: 5px;
+  transition-duration: .3s;
+}
+
+.radio-btn--wrapper:hover {
+  background-color: #FFF;
+  border:1px solid #E4E8ED;
 }
 
 .radio-btn--separator {
@@ -382,6 +388,13 @@ select {
   background: #eef1f5;
   margin-top: 20px;
   padding: 16px 26px 14px 26px;
+  transition-duration: .3s;
+
+}
+
+.requestform__input:hover, input[type="text"]:focus, input[type="tel"]:focus{
+background-color: #FFFFFF;
+border:1px solid #E4E8ED;
 }
 
 .requestform__input--hidden {
@@ -405,6 +418,11 @@ select {
   text-align: center;
   text-transform: uppercase;
   margin-top: 20px;
+  transition-duration: .3s;
+}
+
+.requestform__btn:hover, .requestform__btn:focus{
+background-color: #EC735B;
 }
 
 .requestform__description {
