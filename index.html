@@ -1,61 +1,98 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <link href="./nouislider/nouislider.css" rel="stylesheet">
-    <link href="styles.css" rel="stylesheet" >
+  <head>
+    <meta charset="UTF-8" />
+    <link href="./nouislider/nouislider.css" rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet" />
 
     <script src="./nouislider/nouislider.js"></script>
     <script src="./wNumb/wNumb.js"></script>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Калькулятор</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="calc">
-        <form class="calc__form" action="">
-        <h3 class="calc__main-header">Расчет стоимости газификации</h3> 
+      <form class="calc__form" action="">
+        <h3 class="calc__main-header">Расчет стоимости газификации</h3>
         <div class="calc__content--wrapper">
-        <div class="calc__params">
+          <div class="calc__params">
             <h4 class="calc__header">Введите параметры расчета</h4>
-        <div class="calc__range_wrapper">
-        <div id="range"></div>
-        </div>
-  
-            <div class="calc__range_scale--wrapper">      
-            <img class="calc__range_scale" src="./images/scale.svg" alt="scale" width="500">
-        </div>
-            <div class="radio-btn--wrapper">
-                <div class="radio-btn--separator">.</div>
-            <label class="calc__label">Физическое лицо
-                <input data-tarifs="1.5" class="radio-btn calc__radio" type="radio" name="orgType" id="radioFiz" value="fiz">
-                <span class="radio-btn--custom"></span>
-            </label>
+            <div class="calc__range_wrapper">
+              <div id="range"></div>
+            </div>
 
-            <label class="calc__label">Юридическое лицо
-                <input data-tarifs="2.5" class="radio-btn calc__radio" type="radio" name="orgType" id="radioUr" value="ur">
+            <div class="calc__range_scale--wrapper">
+              <img
+                class="calc__range_scale"
+                src="./images/scale.svg"
+                alt="scale"
+                width="500"
+              />
+            </div>
+            <div class="radio-btn--wrapper">
+              <label class="calc__label"
+                >Физическое лицо
+                <input
+                  data-tarifs="1.5"
+                  class="radio-btn calc__radio"
+                  type="radio"
+                  name="orgType"
+                  id="radioFiz"
+                  value="fiz"
+                />
                 <span class="radio-btn--custom"></span>
-            </label>
-         </div>
+              </label>
+
+              <label class="calc__label"
+                >Юридическое лицо
+                <input
+                  data-tarifs="2.5"
+                  class="radio-btn calc__radio"
+                  type="radio"
+                  name="orgType"
+                  id="radioUr"
+                  value="ur"
+                />
+                <span class="radio-btn--custom"></span>
+              </label>
+            </div>
             <div class="calc__result--wrapper">
-            <span class="calc__result_description">Итоговая сумма:</span>
-            <span class="calc__result">не выбрано</span>
-        </div>
-        </div>   
-        <div class="requestform">
+              <span class="calc__result_description">Итоговая сумма:</span>
+              <span class="calc__result">не выбрано</span>
+            </div>
+          </div>
+          <div class="requestform">
             <h4 class="calc__header">Оставьте запрос на газификацию</h4>
-        <input class="requestform__input" type="text" name="username" placeholder="ВВЕДИТЕ ИМЯ">
-        <input class="requestform__input" type="tel" name="phone" placeholder="ВВЕДИТЕ ТЕЛЕФОН">
-        <input type="number" id="usersquare" class="requestform__input--hidden">
-        <button class="requestform__btn" type="submit" value="">оставить запрос &#8594;</button>
-        <p class="requestform__description">Нажимая на кнопку «Оставить запрос», вы
-            соглашаетесь с политикой конфиденциальности</p>
+            <input
+              class="requestform__input"
+              type="text"
+              name="username"
+              placeholder="ВВЕДИТЕ ИМЯ"
+            />
+            <input
+              class="requestform__input"
+              type="tel"
+              name="phone"
+              placeholder="ВВЕДИТЕ ТЕЛЕФОН"
+            />
+            <input
+              type="number"
+              id="usersquare"
+              class="requestform__input--hidden"
+            />
+            <button class="requestform__btn" type="submit" value="">
+              оставить запрос &#8594;
+            </button>
+            <p class="requestform__description">
+              Нажимая на кнопку «Оставить запрос», вы соглашаетесь с политикой
+              конфиденциальности
+            </p>
+          </div>
         </div>
-        </div>    
-    </form>
+      </form>
     </div>
-    <script src="script.js"></script>
-</body>         
+  </body>
 </html>
 
-
+<script src="script.js"></script>
